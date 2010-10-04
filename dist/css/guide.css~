@@ -121,7 +121,6 @@ acronym {
 
 #footer { 
 	text-align: center;
-    margin-top: 400px;
     border: dotted 1px; 
 	}
 #footer a:link, #footer a:visited { 
