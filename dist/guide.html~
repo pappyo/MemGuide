@@ -5,20 +5,20 @@
     <style type="text/css" media="screen, print, projection">
         @import url(css/guidereset.css);
     </style>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $(".tabLink").each(function(){
-      $(this).click(function(){
-        tabeId = $(this).attr('id');
-        $(".tabLink").removeClass("activeLink");
-        $(this).addClass("activeLink");
-        $(".tabcontent").addClass("hide");
-        $("#"+tabeId+"-1").removeClass("hide")   
-        return false;	  
-      });
-    });  
-  });
-</script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".tabLink").each(function(){
+                $(this).click(function() {
+                tabeId = $(this).attr('id');
+                $(".tabLink").removeClass("activeLink");
+                $(this).addClass("activeLink");
+                $(".tabcontent").addClass("hide");
+                $("#"+tabeId+"-1").removeClass("hide")
+                return false;
+              });
+            });
+         });
+    </script>
 </head>
 <body>
 <div id="wrap">

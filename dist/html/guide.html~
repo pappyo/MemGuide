@@ -2,7 +2,7 @@
 <html>
 <head>
     <style type="text/css" media="screen, print, projection">
-        @import url('MemGuide/dist/css/guidereset.css');
+        @import url(css/guidereset.css);
     </style>
 </head>
 <body>
@@ -11,13 +11,27 @@
         <h1 class="header_h1">H1 Heading</h1>
         <p class="tagline">Tagline</p>
     </div>
-    <div id="nav">
+    <div class="tab-box">
+        <a href="javascript:;" class="tabLink activeLink" id="cont-1">Tab 1</a>
+        <a href="javascript:;" class="tabLink " id="cont-2"> Tab 2</a>
+        <a href="javascript:;" class="tabLink " id="cont-3"> Tab 3</a>
+    </div>
+    <div class="tabcontent paddingAll" id="cont-1-1">
+        This is content box 1
+    </div>
+    <div class="tabcontent paddingAll hide" id="cont-2-1">
+        This is content box 2
+    </div> 
+    <div class="tabcontent paddingAll hide" id="cont-3-1">
+        This is content box 3
+    </div>
+      <!--Old nav bar <div id="nav"> 
         <ul>
             <li><a href="http://www.yahoo.com">Option 1</a></li>
             <li><a href="#">Option 2</a></li>
             <li><a href="#">Option 3</a></li>     
         </ul>
-    </div>
+    </div>-->
     <div id="container">
         <div id="main">
         <h2 class="body">Column 1</h2>
