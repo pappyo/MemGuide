@@ -1,8 +1,8 @@
 #wrap{
     margin: 0px 100px auto; 
-    background: #e2e2f1;
+    background: white;
     line-height: 120%;
-    font-family: sans-serif;
+    font-family: 'Droid Sans', arial, serif;
 }
 /* Header */
 
@@ -24,41 +24,22 @@
     padding-bottom: 10px;
 }
 
-/* Navigation - Old */
-#nav{
-    background: #f6900c;
-    padding: 5px;
-}
-
-#nav ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-#nav li{
-    display: inline;
-    margin: 0;
-    padding: 10px;
-}
-
 /* Navigation with Javascript */
 
 .tab-box{
-    border-bottom: 1px solid #DDD;
-    padding-bottom: 5px;
+    border-bottom: 10px solid #f6900c;
+    padding-bottom: 6px;
 }
 
 .tab-box a{
     border: 1px solid #DDD;
-    color: #666666;
     padding: 5px 15px;
     text-decoration: none;
-    background-color: #eee;
+    background-color: white;
 }
 
 .tab-box a.activeLink{
-    background-color: #fff;
+    background-color: #f1d35a;
     border-bottom: 0;
     padding: 6px 15px;
 }
@@ -72,38 +53,16 @@
     display: none;
 }
 
-/* Body */
+/* Containers */
 
-#container{
-    width: 100%;
-    float: left;
-    margin-right: -200px;
+.container{
+   padding: 5px 5px;
 }
 
-#main{
-    margin-right: 200px;
-    background: #white;
-    padding: 10px;
+.cont-title{
+    font-size: 1.4em;
+    padding: 3px 0 10px 10px;
 }
-
-#sidebar{
-    float: right;
-    width: 200px;
-    padding-top: 10px;
-}
-
-h2.body{
-    margin-top: 0;   /*margin clear for liquid format*/
-    padding-bottom: 7px;
-}
-.marclear{
-    margin-top: 0;
-}
-
-.last{
-    margin-bottom: 0;
-}
-
 /* Footer */
 
 #footer{

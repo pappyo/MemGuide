@@ -1,24 +1,26 @@
 <! test html for mem guide >
 <html>
 <head>
-    <script type="text/javascript" src="jquery.js"></script>
-    <style type="text/css" media="screen, print, projection">
-        @import url(css/guidereset.css);
-    </style>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(".tabLink").each(function(){
-                $(this).click(function() {
-                tabeId = $(this).attr('id');
-                $(".tabLink").removeClass("activeLink");
-                $(this).addClass("activeLink");
-                $(".tabcontent").addClass("hide");
-                $("#"+tabeId+"-1").removeClass("hide")
-                return false;
-              });
-            });
-         });
-    </script>
+<title>Guide for the Fireworks Project</title>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="jquery.js"></script>
+<style type="text/css" media="screen, print, projection">
+    @import url(css/guidereset.css);
+</style>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".tabLink").each(function(){
+      $(this).click(function(){
+        tabeId = $(this).attr('id');
+        $(".tabLink").removeClass("activeLink");
+        $(this).addClass("activeLink");
+        $(".tabcontent").addClass("hide");
+        $("#"+tabeId+"-1").removeClass("hide")   
+        return false;	  
+      });
+    });  
+  });
+</script>
 </head>
 <body>
 <div id="wrap">
@@ -32,33 +34,20 @@
         <a href="javascript:;" class="tabLink " id="cont-3"> Tab 3</a>
     </div>
     <div class="tabcontent paddingAll" id="cont-1-1">
-        This is content box 1
+        <div class="container">
+            <h2 class="cont-title">Title</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </div>    
     </div>
     <div class="tabcontent paddingAll hide" id="cont-2-1">
+        <div class="container">
         This is content box 2
+        </div>
     </div> 
     <div class="tabcontent paddingAll hide" id="cont-3-1">
         This is content box 3
     </div>
-      <!--Old nav bar <div id="nav"> 
-        <ul>
-            <li><a href="http://www.yahoo.com">Option 1</a></li>
-            <li><a href="#">Option 2</a></li>
-            <li><a href="#">Option 3</a></li>     
-        </ul>
-    </div>-->
-    <div id="container">
-        <div id="main">
-        <h2 class="body">Column 1</h2>
-        <p class="last">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>        
-        </div>
-    </div>
-    <div id="sidebar">
-        <h2 class="body">Column 2</h2>
-        <ul>
-            <li><a href="http://www.yahoo.com">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-    </div>
+
     <div id="footer">
         <p>Footer</p>
     </div>
